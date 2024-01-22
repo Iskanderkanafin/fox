@@ -1,3 +1,0 @@
-prin hello
-HIIIWJDOUWDOIW
-
