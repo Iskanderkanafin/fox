@@ -372,3 +372,5 @@ fruits = {"apple", "banana", "cherry"}
 if "apple" 
  fruits:
   print("Yes, apple is a fruit!")
+
+  
