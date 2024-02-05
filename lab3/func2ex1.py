@@ -76,16 +76,16 @@ movies = [
 }
 ]
 #Write a function that takes a single movie and returns True if its IMDB score is above 5.5
-def is_goodmovie(movie):
+def temamovie(movie):
     return movie.get('imdb') > 5.5
 
-print(is_goodmovie(movies[7]))
+print(temamovie(movies[7]))
 
 #Write a function that returns a sublist of movies with an IMDB score above 5.5.
-def goodmovies(movie):
-    return [movie for movie in movies if is_goodmovie(movie)]
+def film(movie):
+    return [movie for movie in movies if film(movie)]
 
-print(goodmovies(movies))
+print(film(movies))
 
 #Write a function that takes a category name and returns just those movies under that category.
 def same_genre(movie, name):
