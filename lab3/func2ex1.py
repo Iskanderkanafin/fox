@@ -75,25 +75,25 @@ movies = [
 "category": "Romance"
 }
 ]
-#Write a function that takes a single movie and returns True if its IMDB score is above 5.5
+#Напишите функцию, которая берет один фильм и возвращает значение True, если его оценка в IMDB выше 5,5
 def temamovie(movie):
     return movie.get('imdb') > 5.5
 
 print(temamovie(movies[7]))
 
-#Write a function that returns a sublist of movies with an IMDB score above 5.5.
+#Напишите функцию, которая возвращает подсписок фильмов с оценкой IMDB выше 5.5
 def film(movie):
     return [movie for movie in movies if film(movie)]
 
 print(film(movies))
 
-#Write a function that takes a category name and returns just those movies under that category.
+#Напишите функцию, которая принимает название категории и возвращает только те фильмы, которые относятся к этой категории.
 def same_genre(movie, name):
     return [movie for movie in movies if movie.get("category") == name]
 
 print(same_genre(movies, "Action"))
 
-#Write a function that takes a list of movies and computes the average IMDB score.
+#Напишите функцию, которая берет список фильмов и вычисляет средний балл IMDB.
 def avg_imdb(movie):
     summa = sum(mv.get('imdb') for mv in movies)
     result = summa/ len(movie)
@@ -101,7 +101,7 @@ def avg_imdb(movie):
 
 print(avg_imdb(movies))
 
-#Write a function that takes a category and computes the average IMDB score.
+#Напишите функцию, которая берет категорию и вычисляет средний балл IMDB.
 def avg_imdb_by_genre(movie, name):
     result = sum(i.get('imdb') for i in same_genre(movie,name))
     return result/ len(same_genre(movie,name))
