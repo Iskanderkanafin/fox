@@ -1,3 +1,4 @@
+#Напишите функцию, которая принимает строку от пользователя и выводит все перестановки этой строки.
 from itertools import permutations
 def perm(s):
     per = permutations(s)
