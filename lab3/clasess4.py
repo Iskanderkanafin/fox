@@ -1,9 +1,9 @@
-#Write the definition of a Point class. Objects from this class should have a
-
-#a method show to display the coordinates of the point
-#a method move to change these coordinates
-#a method dist that computes the distance between 2 points
-
+#Напишите определение класса точек. Объекты из этого класса должны иметь
+'''
+метод show для отображения координат точки
+метод move для изменения этих координат
+метод dist, который вычисляет расстояние между двумя точками
+'''
 
 import math
 class Point:

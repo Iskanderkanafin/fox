@@ -1,4 +1,4 @@
-#Define a class named Rectangle which inherits from Shape class from task 2. Class instance can be constructed by a length and width. The Rectangle class has a method which can compute the area.
+##Определите класс с именем Rectangle, который наследуется от класса Shape из задачи 2. Экземпляр класса может быть создан по длине и ширине. Класс Rectangle имеет метод, который может вычислять площадь.
 
 class Shape:
     def __init__(self, width, length):
