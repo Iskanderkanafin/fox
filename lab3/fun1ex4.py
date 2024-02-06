@@ -1,3 +1,5 @@
+#Вам выдан список чисел, разделенных пробелами. Напишите функцию filter_prime, которая будет принимать список чисел в качестве аргумента и возвращать только простые числа из списка.
+
 def filterprimes(n):
     if n==1:
         return False
@@ -5,7 +7,7 @@ def filterprimes(n):
         if n % i == 0:
             return False
     return True
-inp = input("Введите ряд чисел: ")
+gg = input("Введите ряд чисел: ")
 array = inp.split()
 for i in range(len(array)):
     if (filterprimes(int(array[i]))==True):
