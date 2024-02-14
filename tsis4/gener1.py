@@ -4,8 +4,8 @@ def squares_generator(N):
 
 
 N = int(input())
-squares = squares_generator(N)
-for square in squares:
+square = squares_generator(N)
+for square in squares_generator(N):
     print(square)
         
             
