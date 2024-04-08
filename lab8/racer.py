@@ -13,18 +13,18 @@ screen.fill("white")
 speed = 5
 speed_player=5
 score = 0
-back_ground = pg.image.load("AnimatedStreet1.png")
+back_ground = pg.image.load("AnimatedStreet.png")
 font = pg.font.SysFont("Verdana", 60)
 font_small = pg.font.SysFont("Verdana", 20)
 game_over = font.render("Game Over", True, "red")
-coin=["coin11.png","coin21.png","coin31.png","coin41.png","coin51.png","coin61.png"]
+coin=["coin1.png","coin2.png","coin3.png","coin4.png","coin5.png","coin6.png"]
 coin_sheet_index = 0
 point=0
 
 class player(pg.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pg.image.load("Player1.png")
+        self.image = pg.image.load("Player.png")
         self.rect = self.image.get_rect()
         self.rect.center = (160, 520)
 
@@ -61,7 +61,7 @@ class Coin(pg.sprite.Sprite):
 class Enemy(pg.sprite.Sprite):
     def __init__(self) -> None:
         super().__init__()
-        self.image = pg.image.load("Enemy1.png")
+        self.image = pg.image.load("Enemy.png")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(30, W - 30), 0)
 
@@ -88,7 +88,7 @@ inc_speed = pg.USEREVENT + 1
 coin_ap = pg.USEREVENT + 1
 pg.time.set_timer(coin_ap, 100)
 pg.time.set_timer(inc_speed, 1000)
-g = pg.mixer.Sound('background.mp3').play()
+g = pg.mixer.Sound('song.mp3').play()
 running = True
 
 while running:
@@ -117,7 +117,7 @@ while running:
         point+=1
     if pg.sprite.spritecollideany(p1, enemies):
         g.stop()
-        pg.mixer.Sound('crash.wav').play()
+        pg.mixer.Sound('crash.raw').play()
         time.sleep(0.5)
         screen.fill("blue")
         screen.blit(game_over, (30, 250))
